@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="First module" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="This is my first website" />
+    <meta property="og:image" content="images/barbershop-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Modul 1 HTML</title>
+  </head>
+  <body>
+    <div class="header-main-container container">
+      <aside class="global-aside">
+        <a href="index.html" class="logo">
+          <img
+            src="images/barbershop-logo.png"
+            alt="Barbershop logo"
+            width="68"
+            height="55"
+          />
+        </a>
+        <div class="global-aside-links">
+          <a href="#" class="social-link">YouTube</a
+          ><a href="#" class="social-link">Instagram</a>
+        </div>
+      </aside>
+      <div class="header-container-content">
+        <header class="main-header">
+          <div class="header-container container">
+            <nav class="header-nav">
+              <ul class="header-list list">
+                <li class="header-item">
+                  <a href="" class="header-link header-link-active link">
+                    About
+                  </a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link link">Services and Prices</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link link">Barbers</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="header-address">
+              <a href="tel:+38 044 111 11 11" class="header-link"
+                >+38 044 111 11 11</a
+              >
+              <button class="primary-button">Book a Service</button>
+            </address>
+          </div>
+        </header>
+
+        <section class="hero-section section">
+          <div class="container">
+            <div class="hero-subtitle-container section-subtitle-container">
+              <hr />
+              <span class="hero-subtitle">A hair salon for men in Kyiv</span>
+            </div>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-description">
+              We are experts in trendy men's haircuts. We work quickly,
+              carefully, and tastefully.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <main>
+      <section class="about-section section">
+        <div class="about-container container">
+          <div class="about-images-container">
+            <img
+              src="images/about-image-1.png"
+              alt="First Service"
+              width="270"
+              height="445"
+            />
+            <img
+              src="images/about-image-2.png"
+              alt="Second Service"
+              width="270"
+              height="445"
+            />
+          </div>
+          <div class="about-text-container">
+            <span class="section-subtitle text-grey">
+              <img
+                class="about-subtitle-line"
+                src="images/line-orizontala.png"
+                alt="Horizontal line"
+              />
+              ABOUT
+            </span>
+
+            <h2 class="about-title section-title">
+              The Best Barbershop in Your City
+            </h2>
+            <h3 class="about-subtitle section-description">
+              If you want to add more confidence to your image, you are
+              definitely in the right place.
+            </h3>
+            <p class="about-paragraph section-paragraph">
+              We are a team that never rests on its laurels and yearns for
+              change. And once you fall into the hands of our master, you will
+              never be the same again. We are a team that is always on the same
+              wavelength with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
+            </p>
+            <button class="about-button primary-button text-grey">
+              book a service
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="services-section section">
+        <div class="container">
+          <span class="prices-subtitle section-subtitle-container">
+            <hr />
+            Spend time in the company of the best craftsmen
+          </span>
+          <h2 class="prices-title section-title">Services and Prices</h2>
+          <div class="prices">
+            <ul class="prices-list">
+              <li>
+                <span>Men's Haircut</span>
+                <span class="prices-dash"> </span>
+                <span>from 300 UAH </span>
+              </li>
+              <li>
+                <span>Beard Trim</span>
+                <span class="prices-dash"> </span>
+                <span>from 200 UAH </span>
+              </li>
+              <li>
+                <span>Mustache Trim</span>
+                <span class="prices-dash"> </span>
+                <span>from 200 UAH </span>
+              </li>
+              <li>
+                <span>Straight Razor Shave</span>
+                <span class="prices-dash"> </span>
+                <span>from 200 UAH </span>
+              </li>
+            </ul>
+            <ul class="prices-list">
+              <li>
+                <span>Trainee Haircut </span>
+                <span class="prices-dash"> </span>
+                <span>from 50 UAH </span>
+              </li>
+              <li>
+                <span>Buzz Cut</span>
+                <span class="prices-dash"> </span>
+                <span>from 200 UAH </span>
+              </li>
+              <li>
+                <span>Kids Haircut (&lt;12 y.o.)</span>
+                <span class="prices-dash"> </span>
+                <span>from 300 UAH </span>
+              </li>
+              <li>
+                <span>Gray Coverage</span>
+                <span class="prices-dash"> </span>
+                <span>from 200 UAH </span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="primary-button" type="button">Book a Service</button>
+        </div>
+      </section>
+      <section class="why-us-section section">
+        <div class="why-us-container container">
+          <ul class="features-list">
+            <li class="feature">
+              <h3 class="feature-title">600 <sup>+</sup></h3>
+            </li>
+            <li class="feature">
+              <h3 class="feature-title">50 <sup>+</sup></h3>
+            </li>
+            <li class="feature">
+              <h3 class="feature-title">20 <sup>+</sup></h3>
+            </li>
+            <li class="feature">
+              <h3 class="feature-title">100 <sup>+</sup></h3>
+            </li>
+          </ul>
+          <div>
+            <div class="section-subtitle-container">
+              <hr />
+              <span class="section-subtitle">Old school</span>
+            </div>
+            <h2 class="section-title">Why do they come to us?</h2>
+            <p class="section-description">
+              Only good things are said about us. But it is better to see and
+              feel 1 time than to read 10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="barbers-section section">
+        <div class="container">
+          <div class="section-subtitle-container">
+            <hr />
+            <span class="section-subtitle"
+              >for true connoisseurs of the atmosphere</span
+            >
+          </div>
+
+          <h2 class="barbers-section-title section-title">Our Barbers</h2>
+          <ul class="barbers-list">
+            <li class="barber-card">
+              <img
+                src="images/barber-john-smith.png"
+                alt="Photo Barber John Smith"
+                width="370"
+                height="346"
+              />
+              <h4 class="barber-name">John Smith</h4>
+              <p class="barber-description">Extreme Barber</p>
+            </li>
+            <li class="barber-card">
+              <img
+                src="images/barber-michele-doe.png"
+                alt="Photo Barber Michele Doe"
+                width="370"
+                height="346"
+              />
+              <h4 class="barber-name">John Smith</h4>
+              <p class="barber-description">Extreme Barber</p>
+            </li>
+            <li class="barber-card">
+              <img
+                src="images/barber-alan-black.png"
+                alt="Photo Barber Alan Black"
+                width="370"
+                height="346"
+              />
+              <h4 class="barber-name">Alan Black</h4>
+              <p class="barber-description">Extreme Barber</p>
+              <svg width="20px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-linkedin" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="services-carousel-section section">
+        <div class="container">
+          <div class="section-subtitle-container">
+            <hr />
+            <span class="section-subtitle"
+              >In Latin, "barba" means "beard"</span
+            >
+          </div>
+
+          <ul class="services-carousel-images-container">
+            <li><img src="images/shave-service.png" alt="" /></li>
+            <li><img src="images/trim-service.png" alt="" /></li>
+            <li><img src="images/massage-service.png" alt="" /></li>
+            <li><img src="images/fade-service.png" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-section section">
+        <div class="container">
+          <h2>Contacts</h2>
+          <address>
+            Main Street, 7A Kyiv, 08132 <br />
+
+            +38 044 111 11 11<br />
+
+            barbershop@email.com<br />
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Copyright 2022</span>
+      <span>Instagram</span>
+      <span>Youtube</span>
+    </footer>
+  </body>
+</html>

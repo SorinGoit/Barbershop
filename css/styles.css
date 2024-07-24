@@ -1,0 +1,367 @@
+/* Style reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* End style reset */
+
+:root {
+  --primary-color: #ff6c00;
+  --text-white: #ffffff;
+  --primary-blue: blue;
+  --primary-grey-60: #9da4bd99;
+  --primary-grey: #9da4bd;
+  --text-grey: #303030;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.header-main-container {
+  display: flex;
+}
+
+.global-aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 32px 30px 40px 55px;
+}
+
+.global-aside-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.social-links {
+  color: var(--text-grey);
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+.header-container {
+  padding: 40px 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container-content {
+  flex: 1;
+  background-color: #191c2633;
+  background-image: url("../images/hero-slider-img-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list .header-item {
+  display: inline;
+  margin-left: 40px;
+}
+
+.header-list .header-item:first-child {
+  margin-left: 20px;
+}
+
+.header-link {
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.34px;
+  letter-spacing: 0.1em;
+  color: var(--text-white);
+}
+
+.header-link-active,
+.header-link:hover {
+  color: var(--primary-color);
+}
+
+.header-address {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.primary-button {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.34px;
+  letter-spacing: 0.09em;
+  color: var(--white-text);
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: initial;
+  color: var(--text-white);
+}
+
+.hero-subtitle-container {
+}
+
+.section-subtitle-container hr {
+  width: 60px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  border-color: var(--primary-grey-60);
+}
+
+.hero-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14.98px;
+  letter-spacing: 0.1em;
+  color: var(--primary-grey-60);
+}
+
+.hero-title {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84.53px;
+  letter-spacing: 0.05em;
+  color: var(--text-white);
+  margin-top: 20px;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--primary-grey);
+  margin-top: 20px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-container .about-images-container {
+  display: flex;
+  column-gap: 30px;
+  flex: 0 0 50%;
+}
+
+.about-container .about-text-container {
+}
+
+.about-subtitle-line {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.about-title {
+  margin-top: 20px;
+}
+.about-subtitle {
+  margin-top: 20px;
+}
+.about-paragraph {
+  margin-top: 20px;
+}
+.about-button {
+  margin-top: 40px;
+}
+
+.prices-title {
+  color: var(--text-white);
+  margin-top: 20px;
+}
+.prices-subtitle {
+  color: var(--primary-grey-60);
+}
+
+.prices {
+  display: flex;
+  margin-top: 46px;
+}
+
+.prices-list {
+  flex: 1 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  padding: 30px 40px;
+}
+
+.prices-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.prices-dash {
+  flex: 1 0 auto;
+  height: 1px;
+  background: #9da4bd1f;
+}
+
+.services-carousel-images-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}
+.why-us-container {
+  display: flex;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature {
+  width: 170px;
+  text-align: center;
+  margin: 30px;
+}
+.feature:nth-child(2n) {
+  margin-top: 75px;
+}
+
+.features-list .feature-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+}
+.features-list .feature-title sup {
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  top: -24px;
+}
+
+.barbers-section-title {
+  margin-top: 20px;
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}
+.barber-name {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.barber-description {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.services-section {
+  background: url("../images/services-bg-image.png") #111319;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-section {
+  background: url("../images/contanct-bg-image.png") #191c26;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-grey {
+  color: var(--text-grey);
+}
+
+.section-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14.98px;
+  letter-spacing: 0.1em;
+}
+.section-title {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49.31px;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+}
+.section-paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
