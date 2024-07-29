@@ -325,6 +325,7 @@ body {
   line-height: 22px;
   top: -24px;
 }
+
 .barbers-section {
   background: #f7f7f7;
 }
@@ -354,6 +355,23 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--primary-color);
+}
+
+.contact-form .form-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-white);
+  border-left: none;
+  color: var(--text-white);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--text-white);
+}
+
+.form-label {
+  color: var(--text-white);
 }
 
 .services-section {

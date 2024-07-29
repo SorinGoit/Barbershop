@@ -330,7 +330,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Carousel Section -->
       <section class="services-carousel-section section">
         <div class="container">
           <div class="section-subtitle-container">
@@ -348,16 +348,47 @@
           </ul>
         </div>
       </section>
+      <!-- Contact Section -->
       <section class="contact-section section">
         <div class="container">
-          <h2>Contacts</h2>
-          <address>
-            Main Street, 7A Kyiv, 08132 <br />
+          <form name="contact_form" autocomplete="on" class="contact-form">
+            <div class="input-container">
+              <label class="form-label">
+                Name*
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Name"
+                />
+              </label>
+            </div>
+            <label for="phone" class="form-label">
+              Phone*
+              <input
+                class="form-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                required
+              />
+            </label>
 
-            +38 044 111 11 11<br />
+            <button type="submit" class="primary-button">SEND</button>
+          </form>
+          <div>
+            <h2>Contacts</h2>
+            <address>
+              Main Street, 7A Kyiv, 08132 <br />
 
-            barbershop@email.com<br />
-          </address>
+              +38 044 111 11 11<br />
+
+              barbershop@email.com<br />
+            </address>
+          </div>
         </div>
       </section>
     </main>
