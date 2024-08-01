@@ -348,46 +348,87 @@
           </ul>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container">
+          <button class="primary-button btn-modal" type="button">
+            Open modal
+          </button>
+
+          <div class="form-field">
+            <input
+              type="radio"
+              name="hobbies"
+              id="inot"
+              class="radio-input visually-hidden"
+            />
+            <label for="inot" class="form-radio-label">
+              <span class="radio-icon">
+                <svg class="radio-selected-icon" width="10px" height="8">
+                  <use href="./images/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </span>
+              Inot
+            </label>
+          </div>
+        </div>
+      </section>
       <!-- Contact Section -->
       <section class="contact-section section">
         <div class="container">
-          <form name="contact_form" autocomplete="on" class="contact-form">
-            <div class="input-container">
-              <label class="form-label">
-                Name*
-                <input
-                  class="form-input"
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder="Name"
-                />
-              </label>
+          <div class="contact-container">
+            <form name="contact_form" autocomplete="on" class="contact-form">
+              <div class="input-container">
+                <label class="form-label">
+                  Name*
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Name"
+                  />
+                </label>
+              </div>
+              <div class="input-container">
+                <label for="phone" class="form-label">
+                  Phone*
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="input-container input-container-full-width">
+                <label for="message" class="form-label">
+                  Message
+                  <textarea
+                    class="form-text-area"
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="primary-button">SEND</button>
+            </form>
+            <div class="contact-details">
+              <h2>Contacts</h2>
+              <address>
+                Main Street, 7A Kyiv, 08132 <br />
+
+                +38 044 111 11 11<br />
+
+                barbershop@email.com<br />
+              </address>
             </div>
-            <label for="phone" class="form-label">
-              Phone*
-              <input
-                class="form-input"
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Phone"
-                required
-              />
-            </label>
-
-            <button type="submit" class="primary-button">SEND</button>
-          </form>
-          <div>
-            <h2>Contacts</h2>
-            <address>
-              Main Street, 7A Kyiv, 08132 <br />
-
-              +38 044 111 11 11<br />
-
-              barbershop@email.com<br />
-            </address>
           </div>
         </div>
       </section>
@@ -398,5 +439,19 @@
       <span>Instagram</span>
       <span>Youtube</span>
     </footer>
+
+    <div class="modal-backdrop">
+      <div class="modal-container">
+        <h4>titlu modal</h4>
+
+        <button type="button" class="btn-close-modal">
+          <svg width="16" height="16">
+            <use href="./images/symbol-defs.svg#icon-close" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -41,13 +41,27 @@ ul {
   --primary-color: #ff6c00;
   --text-white: #ffffff;
   --primary-blue: blue;
-  --primary-grey-60: #9da4bd99;
   --primary-grey: #9da4bd;
+  --primary-grey-60: #9da4bd99;
+  --primary-grey-40: #9da4bd66;
   --text-grey: #303030;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -357,21 +371,118 @@ body {
   color: var(--primary-color);
 }
 
-.contact-form .form-input {
+.contact-container {
+  display: flex;
+}
+.contact-form,
+.contact-details {
+  flex: 0 0 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-form .input-container {
+  flex: 0 0 calc(50% - 15px);
+}
+
+.contact-form .input-container-full-width {
+  flex: 0 0 100%;
+}
+
+.contact-form .input-container .form-input,
+.contact-form .input-container .form-text-area {
+  width: 100%;
+}
+
+.contact-form .form-input,
+.contact-form .form-text-area {
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--text-white);
+  border-bottom: 1px solid var(--primary-grey-40);
   border-left: none;
-  color: var(--text-white);
+  color: var(--primary-grey-40);
   outline: none;
+  transition: 0.3s color ease-in-out;
 }
 
-.form-input::placeholder {
-  color: var(--text-white);
-}
-
+.form-input::placeholder,
+.form-text-area::placeholder,
 .form-label {
+  color: var(--primary-grey-40);
+  transition: 0.3s color ease-in-out;
+}
+
+.contact-form .form-input:hover,
+.contact-form .form-text-area:hover {
+  border-bottom: 1px solid var(--text-white);
   color: var(--text-white);
+}
+
+.form-input:hover::placeholder,
+.form-text-area:hover::placeholder,
+.form-label:hover {
+  color: var(--text-white);
+}
+
+.form-text-area {
+  resize: none;
+  height: 76px;
+}
+
+.btn-modal {
+  color: var(--text-grey);
+}
+
+.modal-backdrop {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  background-color: var(--primary-grey-40);
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modal-backdrop.is-open {
+  visibility: initial;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+
+  width: 400px;
+  min-height: 500px;
+}
+
+.radio-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 100%;
+  
+}
+
+.radio-input:checked + .form-radio-label .radio-icon {
+  fill: red;
+  background-color: var(--primary-grey-40);
+  border: none;
 }
 
 .services-section {
