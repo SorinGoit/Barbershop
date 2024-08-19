@@ -45,6 +45,10 @@ ul {
   --primary-grey-60: #9da4bd99;
   --primary-grey-40: #9da4bd66;
   --text-grey: #303030;
+
+  --mobile: 320px;
+  --table: 768px;
+  --desktop: 1280px;
 }
 
 body {
@@ -65,26 +69,42 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 31px;
 }
 
 @media (min-width: 768px) {
   .container {
+    max-width: 720px;
     padding: 0 39px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
+    max-width: 1280px;
     padding: 0 55px;
   }
 }
 
 .section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .header-main-container {
@@ -274,14 +294,16 @@ body {
 .about-container {
   display: flex;
 }
-
 .about-container .about-images-container {
-  display: flex;
-  column-gap: 30px;
-  flex: 0 0 50%;
+  display: none;
 }
 
-.about-container .about-text-container {
+@media (min-width: 768px) {
+  .about-container .about-text-container {
+    display: flex;
+    column-gap: 30px;
+    flex: 0 0 50%;
+  }
 }
 
 .about-subtitle-line {
@@ -311,9 +333,12 @@ body {
 }
 
 .prices {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding: 30px;
   display: flex;
   margin-top: 46px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .prices-list {
@@ -323,18 +348,37 @@ body {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  padding: 30px 40px;
+}
+
+.prices-list:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .prices-list {
+    padding: 30px 40px;
+  }
 }
 
 .prices-list li {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
+.prices-list li:last-of-type {
+  margin-bottom: 0px;
+}
+
 .prices-dash {
   flex: 1 0 auto;
   height: 1px;
   background: #9da4bd1f;
+}
+
+.prices-button {
+  display: block;
+  margin: auto;
 }
 
 .services-carousel-images-container {
@@ -342,8 +386,11 @@ body {
   gap: 30px;
   margin-top: 44px;
 }
-.why-us-container {
-  display: flex;
+
+@media (min-width: 1024px) {
+  .why-us-container {
+    display: flex;
+  }
 }
 
 .features-list {
@@ -563,4 +610,12 @@ body {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.02em;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
 }
